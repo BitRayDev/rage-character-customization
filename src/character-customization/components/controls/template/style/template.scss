@@ -1,0 +1,25 @@
+.control-template {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-shrink: 0;
+
+  height: 3.5vw;
+  
+  padding-left: 1.25vw;
+
+  font-size: 1vw;
+
+  color: white;
+  background: linear-gradient(90.35deg, rgba(171, 113, 190, 0.2) 6.01%, rgba(26, 117, 255, 0) 99.74%);
+
+  border-radius: 2px;
+
+  &__slot {
+    background: rgba(0, 0, 0, 0.13);
+
+    width: 16vw;
+    height: 100%;
+  }
+}

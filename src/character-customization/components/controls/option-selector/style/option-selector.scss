@@ -1,0 +1,30 @@
+.option-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+
+  box-sizing: border-box;
+  padding: .25vw;
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 3vw;
+
+    color: black;
+
+    cursor: pointer;
+    
+    &_left {
+      background-color: white;
+    }
+    &_right {
+      background-color: #41ffbb;
+    }
+  }
+}

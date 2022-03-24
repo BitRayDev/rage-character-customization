@@ -1,0 +1,48 @@
+.image-slot {
+  position: relative;
+  height: 12vw;
+  width: 8.5vw;
+
+  padding: 0.5vw;
+
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 0.2vw;
+
+  cursor: pointer;
+
+  &__title {
+    color: white;
+    font-weight: 600;
+    font-size: 1vw;
+  }
+
+  &__indicator {
+    position: absolute;
+
+    width: 70%;
+
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    fill: white;
+    filter: drop-shadow(0px 0px 2vw white);
+
+    transition: all 200ms ease-out;
+
+    &_active {
+      fill: #ff6d35;
+      filter: drop-shadow(0px 0px 2vw #ff6d35);
+    }
+  }
+
+  &__image {
+    position: absolute;
+
+    width: 90%;
+
+    bottom: 0.5vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

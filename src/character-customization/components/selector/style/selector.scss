@@ -1,0 +1,83 @@
+.character-customization-selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5vw;
+
+  position: relative;
+
+  width: 6vw;
+  height: 7vw;
+
+  cursor: pointer;
+
+  &__background {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 100%;
+  }
+
+  &__outer-border {
+    fill: rgba(255, 255, 255, 0.05);
+
+    transition: fill 200ms ease-out;
+    &_active {
+      fill: url(#paint0_linear_1_116);
+    }
+  }
+  &__inner-border {
+    fill: rgba(255, 255, 255, 0.05);
+
+    transition: fill 200ms ease-out;
+    &_active {
+      fill: #4C5262;
+    }
+  }
+  &__hexagon {
+    fill: rgba(255, 255, 255, 0.05);
+
+    transition: fill 200ms ease-out;
+    &_active {
+      fill: url(#paint1_linear_1_116);
+      opacity: 0.2;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    max-height: 20%;
+    width: 25%;
+    
+    z-index: 1;
+    
+    opacity: 0.5;
+
+    transition: opacity 200ms ease-out;
+    &_active {
+      opacity: 1;
+    }
+  }
+  
+  &__title {
+    position: relative;
+    width: 50%;
+    
+    font-size: .6vw;
+    text-align: center;
+
+    color: white;
+
+    z-index: 1;
+
+    opacity: 0.5;
+
+    transition: opacity 200ms ease-out;
+    &_active {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.slider-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5vw;
+
+  font-size: 1vw;
+
+  width: 100%;
+  height: 100%;
+
+  box-sizing: border-box;
+  padding: 0 1vw;
+
+  border-radius: .1vw;
+}

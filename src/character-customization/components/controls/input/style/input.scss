@@ -1,0 +1,21 @@
+.input-control {
+  height: 100%;
+  width: 100%;
+
+  box-sizing: border-box;
+  padding: .5vw .75vw;
+
+  &__input {
+    display: block;
+
+    height: 100%;
+    width: 100%;
+    
+    border: none;
+
+    outline: none;
+    background: none;
+
+    color: white;
+  }
+}

@@ -1,0 +1,35 @@
+.switch-control {
+  display: flex;
+
+  height: 100%;
+  width: 100%;
+
+  &__option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-grow: 1;
+
+    height: 100%;
+
+    opacity: 0.4;
+    background-color: rgba(32, 117, 252, 0.05);
+    border-radius: .1vw;
+
+    cursor: pointer;
+
+    transition: all 200ms ease-out;
+
+    &_active {
+      opacity: 1;
+      background-color: #2075FC; 
+      box-shadow: 0px 12px 43px -11px rgba(32, 117, 252, 0.5);
+    }
+  }
+
+  &__option-icon {
+    max-height: 1.5vw;
+    max-width: 1.5vw;
+  }
+}

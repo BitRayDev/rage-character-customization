@@ -1,0 +1,20 @@
+.color-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .2vw;
+
+  padding: .25vw;
+
+  &__color {
+    height: .9vw;
+    width: .9vw;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+
+    &_active {
+      border: .2vw solid lightgray !important;
+    }
+  }
+}

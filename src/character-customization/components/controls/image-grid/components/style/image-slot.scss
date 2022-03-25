@@ -39,9 +39,11 @@
   &__image {
     position: absolute;
 
-    width: 90%;
+    width: 95%;
+    max-width: 95%;
+    max-height: 80%;
 
-    bottom: 0.5vw;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
   }

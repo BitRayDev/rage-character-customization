@@ -9,7 +9,8 @@ export interface ImageSlotData {
 }
 export interface ImageGridProps {
   imageSlots: ImageSlotData[]
-  onSlotSelected?: () => void
+  style?: React.CSSProperties
+  onSlotSelected?: (slotIndex : number) => void
 }
 
 const ImageGrid = (props : ImageGridProps) => {
@@ -17,7 +18,7 @@ const ImageGrid = (props : ImageGridProps) => {
 
   const onSlotClicked = (slotIndex : number) => {
     setSelectedIndex(slotIndex);
-    props.onSlotSelected?.();
+    props.onSlotSelected?.(slotIndex);
   }
 
   const imageSlotElements = props.imageSlots.map((imageSlot, index) => (
@@ -25,7 +26,7 @@ const ImageGrid = (props : ImageGridProps) => {
   ));
 
   return (
-    <div className="image-grid">
+    <div className="image-grid" style={props.style}>
       {imageSlotElements}
     </div>
   )

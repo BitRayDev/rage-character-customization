@@ -6,7 +6,7 @@ import SwitchControl from './components/controls/switch';
 import SliderControl from './components/controls/slider';
 import ColorPickerControl from './components/controls/color-picker';
 import OptionSelectorControl from './components/controls/option-selector';
-import ImageGrid from './components/controls/image-grid';
+import ImageGrid, { ImageSlotData } from './components/controls/image-grid';
 import Button from './components/button';
 
 import dna from './assets/img/icons/dna.svg';
@@ -23,6 +23,11 @@ import neck from './assets/img/icons/neck.svg';
 import chin from './assets/img/icons/chin.svg';
 
 import father0 from './assets/img/slots-images/fathers/father0.png';
+import father10 from './assets/img/slots-images/fathers/father10.png';
+import hairF0 from './assets/img/slots-images/hairF/hairF0.png';
+import hairF10 from './assets/img/slots-images/hairF/hairF10.png';
+import hairM0 from './assets/img/slots-images/hairM/hairM10.png';
+import hairM10 from './assets/img/slots-images/hairM/hairM10.png';
 import InputControl from './components/controls/input';
 
 type SectionType = "DNA" | "Face" | "Appearance" | "Hair" | "Cloths";
@@ -122,29 +127,34 @@ const colors = [
   '#628713'
 ]
 
-const testFathers = [
+const testFathers : ImageSlotData[] = [
   {
     title: "John",
     image: father0
   },
   {
     title: "Franklin",
-    image: father0
+    image: father10
   },
   {
     title: "Graham Coxon",
     image: father0
   },
   {
-    title: "John",
-    image: father0
+    title: "Прическа 1",
+    image: hairF0
   },
   {
-    title: "John",
-    image: father0
+    title: "Прическа 10",
+    image: hairF10
   },
   {
-    title: "John",
-    image: father0
+    title: "Прическа 1",
+    image: hairM0
+  },
+  {
+    title: "Прическа 10",
+    image: hairM10
   },
 ]
+

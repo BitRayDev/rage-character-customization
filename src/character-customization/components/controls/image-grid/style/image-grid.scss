@@ -1,11 +1,11 @@
 .image-grid {
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
   gap: 0.25vw;
   flex-shrink: 0;
 
   width: 100%;
-  height: 20vw;
 
   overflow: hidden;
 

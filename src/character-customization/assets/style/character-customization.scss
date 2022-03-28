@@ -57,26 +57,24 @@
     flex-direction: column;
     gap: .25vw;
 
-    width: 30vw;
+    width: 26vw;
     height: 100%;
   }
   &__controls {
     display: flex;
     flex-direction: column;
     gap: .25vw;
-    flex-grow: 1;
 
     padding-right: .35vw;
-
-    height: 35vw;
 
     overflow: auto;
   }
   &__buttons {
     display: flex;
+    justify-self: flex-end;
     gap: .25vw;
   }
   &__primary-button {
-    width: 20vw;
+    width: 16vw;
   }
 }

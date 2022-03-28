@@ -40,7 +40,7 @@ export default SliderControl
 
 const sliderStyle : React.CSSProperties = {
   padding: 0,
-  height: '.4vw',
+  height: '.3vw',
 }
 const railStyle : React.CSSProperties = {
   margin: 0,
@@ -52,8 +52,8 @@ const trackStyle : React.CSSProperties = {
   backgroundColor: '#FFAA2C'
 }
 const handleStyle : React.CSSProperties = {
-  height: '.8vw',
-  width: '1.5vw',
+  height: '.6vw',
+  width: '1.2vw',
   top: '50%',
   transform: 'translate(-50%, -50%)',
   margin: 0,
